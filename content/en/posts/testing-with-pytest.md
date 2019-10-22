@@ -17,19 +17,19 @@ The first thing would be choosing the testing lib. We have looked into the three
 main ones, behave, unittest and pytest. We chose the latter because we thought
 of it as a mix between the two. Behave and unittest are both good in what they 
 offer, but we thought behave is more useful for integration tests as the unit 
-tests started to get too verbose and unittest lacks test cases, you have to 
-create a function for every case and corner case of the thing you are testing. 
-Pytest does have test cases, using the parametrize decorator, and it's not too 
-verbose, as opposed to behave. And I __think__ it's the most used by the
-community as well.
+tests started to get too verbose and unittest lacks test cases, which means you 
+have to create a function for every case and corner case of the thing you are 
+testing. Pytest does have test cases, using the parametrize decorator, and it's 
+not too verbose, as opposed to behave. And I __think__ it's the most used by 
+the community as well.
 
 I am also going to use a lib called mock; for mocking stuff, obviously. Most
 people that advocate for unit tests say you shouldn't use other components of
 your software unnecessarily to test one of them. As an example, if you have a
 method that saves a document into a database, you shouldn't access your database
-third-party lib to test it. You can't verify the lib's integrity with your test,
-and if your test fails who knows if this is because of the lib or your code.
-This is where mock shines, you can create a mock of your database connector and
+third-party lib to test it. You can't verify the lib's integrity with your test 
+and, if your test fails, who knows if this is because of the lib or your code.
+This is where mock shines. You can create a mock of your database connector and
 mimick its output based on the input you provide.
 
 The mock lib comes with a function called patch, where you can mock the things
@@ -104,9 +104,9 @@ while `dummy_return` is the expected return.
 You can add as many test cases as you want in the array of tests, e.g.:
 `({'_id': '2'}, dummy_return2)`, `({'_id': '3'}, False)`, etc.
 
-The test will run for every case you have defined in the parametrize. With 
-that, you asserted that given an input, it returned the correct response. And
-this covers the basic stuff of testing with pytest and mock, how to use the
+The test will run for every case you have defined in the parametrize. 
+Therefore, you asserted that given an input, it returned the correct response. 
+And this covers the basic stuff of testing with pytest and mock, how to use the
 return values and the side effects. It should be enough for most applications.
 
 Don't forget to check the documentations as well. There are plenty of other
