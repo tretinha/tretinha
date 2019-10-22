@@ -1,0 +1,38 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+title = "Tretinha's Lair"
+# theme = "yinyang"
+DefaultContentLanguage = "en"
+
+[author]
+    name = "Tretinha's Lair"
+
+[languages]
+    [languages.en]
+        contentDir="content/en"
+        languageName = "English"
+        weight = 1
+    # [languages.br]
+    #    contentDir="content/br"
+    #    languageName = "Portuguese"
+    #    weight = 1
+    
+[params]
+extraHead = ''
+mainSections = ["posts"]
+
+[[params.socials]]
+name = "sourcehut"
+link = "https://git.sr.ht/~tretinha"
+
+[[params.socials]]
+name = "github"
+link = "https://github.com/tretinha"
+
+[[params.socials]]
+name = "mastodon"
+link = "https://x0r.be/@treta"
+
+[[params.socials]]
+name = "email"
+link = "mailto:gustavogiordanocolombini@gmail.com"
