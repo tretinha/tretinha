@@ -50,9 +50,9 @@ Not having an easy way to access your failed containers for debugging (I don't
 want logs only, for satan's sakes, I want to be able to run commands on the
 machine) is a very frustrating experience; your failed containers just don't
 exist anymore when a deploy fails, which means you can't access an unexistent
-machine. I didn't completely overcome this until now, I just got better at
-describing my services and deployments and didn't need that much to go into the
-machines. That's a bummer.
+machine. I didn't completely overcome this, I just got better at describing my 
+services and deployments and didn't need that much to go into the machines. 
+That's a bummer.
 
 Looking in the perspective of a company, it's very good to use Kubernetes
 because it's very easy to understand how to deploy the app. The knowledge gets
@@ -60,5 +60,5 @@ more interchangeable. If you get this aligned with an infrastructure management
 tool like Terraform, you'll basically have your whole cloud infrastructure
 "described".
 
-I'll probably create more articles on Kubernetes since the journey is only
-starting (maybe rectify a few things too? heh).
+I'll probably create more articles on Kubernetes since the journey only 
+started (maybe rectify a few things too? heh).
